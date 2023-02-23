@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangys.photo.mapper.PhotoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zhangys.photo.pojo.Photo">
+        <id column="id" property="id" />
+        <result column="photo_name" property="photoName" />
+        <result column="photo_intro" property="photoIntro" />
+        <result column="photo_url" property="photoUrl" />
+        <result column="shooting_time" property="shootingTime" />
+        <result column="latitude" property="latitude" />
+        <result column="longitude" property="longitude" />
+        <result column="address" property="address" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, photo_name, photo_intro, photo_url, shooting_time, latitude, longitude, address
+    </sql>
+
+</mapper>
